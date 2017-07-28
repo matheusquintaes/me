@@ -1,14 +1,20 @@
 *{
     margin: 0;
     padding: 0;
-        box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 body{
     font-family: 'Rubik', sans-serif;  
     background: #1E1E20;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.4rem;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 a{
@@ -20,52 +26,41 @@ p{
     font-size: 24px;
 }
 
+/* ----------- header ----------------*/
+
 .header{
-    max-width: 1120px;
-    margin: 0 auto;
-    padding-top: 4vh;
-    height: 10vh;
-    width: 100%;
-    display: block;
+    display: flex;
+    padding: 2%;
 }
 
-.header:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .header__title{
-    font-size: 18px;
-    float: left;
+    font-size: 1.2rem;  
     font-family: 'Rubik', sans-serif;  
-    font-weight: normal;
-    display: block;
-    width: 50%;
+    font-weight: normal;    
 }
 .menu{
-    float: left;
-    width: 50%;
+    width: 100%;
+    font-size: 1.2rem;  
     text-align: right;
 }
 
 .menu__item{
-  font-size: 18px;
-  margin-left: 50px;
+    font-size: 1rem;
+    margin-left: 50px;
 }
 
 .topo{
     position: relative;
-    max-width: 1120px;
-    margin: 0 auto;
     height: 90vh;
 }
 
 .topo__container{
-   width: 70%;
+   width: 60vw;
+   position: absolute;
+   z-index: 2;
+   top: 20vh;
 }
-
-
 
 .topo__title{
     font-size: 48px;
@@ -82,12 +77,13 @@ p{
     position: absolute;
     bottom: 13vh;
     font-size: 16px;
-    left: 30vw;
+    z-index: 2;
+    left: 32vw;
 }
 
 .topo__img{
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     right: 0;
 }
