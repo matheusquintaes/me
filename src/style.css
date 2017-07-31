@@ -1,3 +1,5 @@
+/* ----------- reset ----------- */
+
 *{
     margin: 0;
     padding: 0;
@@ -12,11 +14,6 @@ body{
     font-size: 1.4rem;
 }
 
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 a{
     text-decoration: none;
     color: #fff;
@@ -26,78 +23,119 @@ p{
     font-size: 24px;
 }
 
-/* ----------- header ----------------*/
+h1,h2,h3,h4,h5{
+    font-family: 'Raleway', sans-serif;
+}
+
+.title{
+    text-align: center;
+    margin: 100px 0;
+    font-size: 3rem;
+    text-transform: uppercase
+}
+.title::after{
+    content: "";
+    display: block;
+    background: red;
+    height: 4px;
+    width: 140px;
+    margin: 20px auto;
+}
+
+.title--black{
+    color: #1A1A1A;
+}
+
+/* ----------- header ----------- */
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .header{
     display: flex;
-    padding: 2%;
+    padding: 2% 0;
 }
 
+    .header__title{
+        font-size: 1.2rem;  
+        font-family: 'Rubik', sans-serif;  
+        font-weight: normal;    
+    }
 
-.header__title{
-    font-size: 1.2rem;  
-    font-family: 'Rubik', sans-serif;  
-    font-weight: normal;    
-}
 .menu{
     width: 100%;
     font-size: 1.2rem;  
     text-align: right;
 }
 
-.menu__item{
-    font-size: 1rem;
-    margin-left: 50px;
-}
+    .menu__item{
+        font-size: 1rem;
+        margin-left: 3%;
+    }
 
 .topo{
     position: relative;
     height: 90vh;
 }
 
-.topo__container{
-   width: 60vw;
-   position: absolute;
-   z-index: 2;
-   top: 20vh;
-}
+    .topo__container{
+        width: 60%;
+        position: absolute;
+        z-index: 2;
+        top: 20%;
+    }
 
-.topo__title{
-    font-size: 48px;
-    margin-bottom: 80px;
-}
+    .topo__title{
+        font-size: 48px;
+        margin-bottom: 80px;
+    }
 
-.topo__subtitle{
-    font-size: 24px;
-    font-family: 'Rubik', sans-serif; 
-    font-weight: normal;
-}
+    .topo__subtitle{
+        font-size: 24px;
+        font-family: 'Rubik', sans-serif; 
+        font-weight: normal;
+    }
 
-.topo__link{
-    position: absolute;
-    bottom: 13vh;
-    font-size: 16px;
-    z-index: 2;
-    left: 32vw;
-}
+    .topo__img{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+    }
 
-.topo__img{
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-}
+    .topo__link{
+        font-size: 16px;
+        position: absolute;
+        left: calc(50% - 60px);
+        bottom: 10%;
+        z-index: 2;
+    }
+
+
 
 .portifolio{
     background: #fff;
-    padding: 80px;
-
+    padding: 140px 0;
 }
+    
+    .portifolio__box{
+        display: flex;
+    }
 
-portifolio__title{
-    color: #1A1A1A;
-}
+    .item{
+        margin-right: 3%;
+        flex-basis:31.33333%;
+        min-height: 335px;
+        background: #ddd;
+    }
 
-h1,h2,h3,h4,h5{
-    font-family: 'Raleway', sans-serif;
-}
+    .item--last{
+        margin-right: 0;
+    }
+
+    .portifolio__item--th{
+
+    }
+

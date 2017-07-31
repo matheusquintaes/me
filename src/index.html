@@ -9,38 +9,41 @@
     </head>
     <body>
     
-    <div class="wrapper">
-        <header class="header">
+  
+    <header class="header wrapper">
 
-            <h1 class="header__title">comlink1<br/>mkt</h1>
+        <h1 class="header__title">comlink1<br/>mkt</h1>
+    
+        <nav class="menu">
+            <a class="menu__item">Placeat</a>
+            <a class="menu__item">Consectetur adipisicing</a>
+            <a class="menu__item">Expedita</a>
+        </nav>
+    </header>
+    <section class="topo wrapper">
+        <div class="topo__container">
+            <h2 class="topo__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h2>
+            <h3 class="topo__subtitle">Nostrum eaque fugiat <br/> assumenda officiis.. </h3>
+        </div>
+        <picture class="topo__img">
+            <source srcset="./foto-home.jpg" media="(max-width: 768px)">
+            <img src="./img/home.jpg">
+        </picture>
+        <a class="topo__link" href="">Eveniet fugit. </a>
+    </section>
+
+    <section class="portifolio">
+
+        <h4 class="title title--black"> Placeat</h4>
         
-            <nav class="menu">
-                <a class="menu__item">Placeat</a>
-                <a class="menu__item">Consectetur adipisicing</a>
-                <a class="menu__item">Expedita</a>
-            </nav>
-        </header>
-    </div>
-          
-             <section class="topo">
-                <div class="topo__container">
-                    <h2 class="topo__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h2>
-                    <h3 class="topo__subtitle">Nostrum eaque fugiat   <br/>assumenda officiis..</h3>
-                </div>
-                <picture class="topo__img">
-                    <source srcset="./foto-home.jpg" media="(max-width: 768px)">
-                    <img src="./img/home.jpg">
-                </picture>
+        <div class="portifolio__box wrapper">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item item--last"></div>
+        </div>
+    </section> 
 
-                <a class="topo__link" href="">Eveniet fugit. </a>
-            </section>
-            <section class="portifolio">
-                <h4> Placeat</h4>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-            </section> 
-         
-            <script src="bundle.js"> </script>
+          
+    <script src="bundle.js"> </script>
     </body>
 </html>
