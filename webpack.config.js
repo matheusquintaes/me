@@ -23,6 +23,10 @@ module.exports = {
                 test: /\.(html)$/,
                 use: 'html-loader'
             },
+            {
+                test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
+                loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]'
+            }
             
             
         ]
@@ -30,5 +34,12 @@ module.exports = {
     devServer: {
         port: 9090,
         contentBase: './src'
-    }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery"
+        })
+    ]
 }
