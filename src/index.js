@@ -9,7 +9,7 @@ import 'owl.carousel';
 $('.owl-carousel').owlCarousel({
     loop:false,
     margin:10,
-    nav:true,
+    nav:false,
     items:1,
     center: true
 })
